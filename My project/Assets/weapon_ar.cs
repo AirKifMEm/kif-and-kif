@@ -10,16 +10,31 @@ public class weapon_ar : MonoBehaviour
     public GameObject bullet;
     public bool seeenemy;
 
+    private void Start()
+    {
+        InvokeRepeating("Fire", 1f, firerate);
+    }
     private void Update()
     {
-        while (seeenemy == true)
+        if (seeenemy == true)
         {
-            Invoke("Fire", 2f);
+            fireblast.SetActive(true);
         }
-            
+        else
+        {
+            fireblast.SetActive(false);
+        }
     }
-    private void Test()
+    private void Fire()
     {
-        Debug.Log("Testing testing testing");
+        if (seeenemy == true)
+        {
+            Vector3 spawn = new Vector3(fireblast.transform.position.x, fireblast.transform.position.y, fireblast.transform.position.z);
+            
+            Instantiate(bullet, spawn, Quaternion.identity);
+
+
+        }
     }
+
 }
