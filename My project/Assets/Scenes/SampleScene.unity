@@ -288,7 +288,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141628145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.175393, y: 0.97, z: 0.06825133}
+  m_LocalPosition: {x: -3.175393, y: 0.874, z: 0.06825133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -345,8 +345,8 @@ MonoBehaviour:
     m_Bits: 64
   Gun: {fileID: 6152512858610120543, guid: d5ffb284bd1211e4db0d1768de7be105, type: 3}
   arm: {fileID: 347339046}
---- !u!70 &141628151
-CapsuleCollider2D:
+--- !u!61 &141628151
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -358,9 +358,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.0010374, y: 0.07107961}
-  m_Size: {x: 1.0094037, y: 2.6323874}
-  m_Direction: 0
+  m_Offset: {x: -0.91524243, y: 0.032903016}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9610534, y: 2.5451016}
+  m_EdgeRadius: 0
 --- !u!1 &152179373
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +647,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 508399102}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f559c34ed386af74f95d6cfd93e7a4a3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1332,7 +1342,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1721963429}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f559c34ed386af74f95d6cfd93e7a4a3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1507,7 +1517,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1738987391}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f559c34ed386af74f95d6cfd93e7a4a3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
