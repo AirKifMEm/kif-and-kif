@@ -21,8 +21,8 @@ public class player : MonoBehaviour
     private Animator anim;
 
     public static int heals = 5;
-    public GameObject Gun;
-    public GameObject arm;
+    public static int coins;
+    
 
 
     private void Start()
@@ -30,10 +30,6 @@ public class player : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
-        GameObject prefab = Instantiate(Gun, spawn, Quaternion.identity) as GameObject;
-        prefab.transform.SetParent(arm.transform);
-        prefab.transform.position = new Vector3(prefab.transform.position.x+0.6f, prefab.transform.position.y-0.23f, prefab.transform.position.z);
     }
 
     private void FixedUpdate()

@@ -5,25 +5,30 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
   
-    public float speed = 20f;
+    public float speed = 1000f;
     
     private Rigidbody2D rigidBody;
 
     public GameObject self;
 
-    public int dmg;
-    
+    public static int dmg;
 
-   
+    public int Damage;
+
+
+
     void Start()
     {
+
+        dmg = Damage;
+
         if (player.facingRight == true)
         {
-            gameObject.GetComponent<Rigidbody>().AddForce(1000, 0, 0);
+            gameObject.GetComponent<Rigidbody>().AddForce(speed, 0, 0);
         }
         else
         {
-            gameObject.GetComponent<Rigidbody>().AddForce(-1000, 0, 0);
+            gameObject.GetComponent<Rigidbody>().AddForce(-speed, 0, 0);
         }
 
         Invoke("Dead", 4f);
@@ -32,7 +37,8 @@ public class Bullets : MonoBehaviour
     {
         Destroy(self);
     }
-   
+
+
 
 
 
