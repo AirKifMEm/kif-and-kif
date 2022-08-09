@@ -23,6 +23,8 @@ public class enemy_base : MonoBehaviour
     private int chance;
     public int moneydrop;
 
+    
+
     void Start()
     {
         waitTime = startWaitTime;
@@ -33,27 +35,9 @@ public class enemy_base : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpot[randomSpot].position, speed * Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, moveSpot[randomSpot].position) < 0.2f)
-        {
-            if (waitTime <= 0)
-            {
-                if (moveSpot.Length == 3)
-                {
-                    randomSpot = Random.Range(0, moveSpot.Length);
-                }
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
-                waitTime = startWaitTime;
 
-            }
-            else
-            {
-                waitTime -= Time.deltaTime;
-            }
-        }
 
-       
 
     }
 
