@@ -15290,7 +15290,7 @@ MonoBehaviour:
   snip: {fileID: 736987547774070035, guid: 768feba4e4ddbff4aa2a6ff6900864df, type: 3}
   mg: {fileID: 736987547774070035, guid: 768feba4e4ddbff4aa2a6ff6900864df, type: 3}
   rocketL: {fileID: 3819364124496405455, guid: 564e0df0714d34e42adc7ba862d57c9b, type: 3}
-  GunN: 6
+  GunN: 3
   arm: {fileID: 347339046}
 --- !u!1 &1417979890
 GameObject:
@@ -15471,6 +15471,10 @@ PrefabInstance:
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1.03
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16059,27 +16063,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -16113,12 +16117,20 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5125
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.29375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4582
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9292802
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16151,6 +16163,14 @@ PrefabInstance:
     - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291895417236885288, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291895417236885291, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3291895417236885292, guid: 5ec4e4d1072980a4b9b838ba25d0cde4, type: 3}
       propertyPath: Heals

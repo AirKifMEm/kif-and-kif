@@ -6,16 +6,6 @@ using Random = UnityEngine.Random;
 public class enemy_base : MonoBehaviour
 {
 
-    public float speed;
-
-    private float waitTime;
-
-    public float startWaitTime;
-
-    public Transform[] moveSpot;
-    private bool ismoveleft = true;
-    private int randomSpot;
-
     public int Heals = 100;
     
     public GameObject self;
@@ -23,19 +13,38 @@ public class enemy_base : MonoBehaviour
     private int chance;
     public int moneydrop;
 
-    
+    private Transform target;
+    public float seeDistance = 5f;
+    public float attackDistance = 2f;
+    public float speed = 6;
 
     void Start()
     {
-        waitTime = startWaitTime;
-        randomSpot = Random.Range(0, moveSpot.Length);
         
+        target = GameObject.FindWithTag("Player").transform;
     }
 
 
     void Update()
     {
+        
+        if (Vector3.Distance(transform.position, target.transform.position) < seeDistance)
+        {
+            if (Vector3.Distance(transform.position, target.transform.position) > attackDistance)
+            {
+                //walk
+                transform.LookAt(target.transform);
+                transform.Translate(new Vector3(0, 0, speed * Time.deltaTime));
+                Vector3 Scaler = transform.localScale;
+                Scaler.x *= -1;
+                transform.localScale = Scaler;
 
+            }
+        }
+        else
+        {
+            //idle
+        }
 
 
 
