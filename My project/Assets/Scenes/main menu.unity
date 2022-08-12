@@ -2271,9 +2271,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b480cfa13a3c36b409620109e97f86f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slider: {fileID: 1932418530}
   dia: {fileID: 1151841642}
   mon: {fileID: 2135769397}
   ene: {fileID: 572879952}
+  levels: {fileID: 1637874828}
 --- !u!4 &524667267
 Transform:
   m_ObjectHideFlags: 0

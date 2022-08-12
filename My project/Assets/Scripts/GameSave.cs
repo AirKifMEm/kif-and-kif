@@ -12,6 +12,8 @@ public class GameSave : MonoBehaviour
         public int money;
         public int ener;
         public int diam;
+        public int level;
+        public float exp;
     }
 
     public void SaveGame()
@@ -24,6 +26,8 @@ public class GameSave : MonoBehaviour
         data.money = GameRes.money;
         data.ener = GameRes.ener;
         data.diam = GameRes.diam;
+        data.exp = GameRes.exp;
+        data.level = GameRes.level;
 
 
         File.WriteAllText(Application.persistentDataPath + "/Save" + "/SaveGame.sv", JsonUtility.ToJson(data));
@@ -48,6 +52,8 @@ public class GameSave : MonoBehaviour
         GameRes.money = data.money;
         GameRes.ener = data.ener;
         GameRes.diam = data.diam;
+        GameRes.exp = data.exp;
+        GameRes.level = data.level;
     }
 
     public void Delete()

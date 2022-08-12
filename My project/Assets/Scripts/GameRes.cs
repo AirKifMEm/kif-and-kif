@@ -10,23 +10,38 @@ public class GameRes : MonoBehaviour
     public static int ener;
     public static int diam;
 
-    
+    [Header("Level value")]
+    public Slider slider;
+    public  static float exp;
+    public  static int level;
+
+
 
     [Header("Text's")]
     public Text dia;
     public Text mon;
     public Text ene;
+    public Text levels;
+
+  
 
     void Update()
     {
-      
-
+        
+        slider.value = exp;
         dia.text = diam.ToString();
         mon.text = money.ToString();
         ene.text = ener.ToString();
+        levels.text = level.ToString();
+
+        //new level
+        if(exp >= 1)
+        {
+            exp = 0;
+            level = level + 1;
+        }
 
 
-       
     }
 
 }
