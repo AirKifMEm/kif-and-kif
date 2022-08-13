@@ -33,11 +33,9 @@ public class enemy_base : MonoBehaviour
             if (Vector3.Distance(transform.position, target.transform.position) > attackDistance)
             {
                 //walk
-                transform.LookAt(target.transform.position);
-                self.transform.position=new Vector3(speed * Time.deltaTime, 0, 0);
-                Vector3 Scaler = transform.localScale;
-                Scaler.x *= -1;
-                transform.localScale = Scaler;
+                transform.LookAt(target.transform);
+                transform.localEulerAngles = new Vector3(0, 0, 0);
+                self.transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
 
             }
         }
