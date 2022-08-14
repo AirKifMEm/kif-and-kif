@@ -12,11 +12,14 @@ public class Gun_DATA : MonoBehaviour
     public GameObject mg;
     public GameObject rocketL;
     [Header("arm_socket")]
-    public int GunN;
+    public static int GunN;
     public GameObject arm;
 
     void Start()
     {
+
+        GunN = GameRes.CurrentGun;
+
         if (GunN == 1) //ak_spawn
         { 
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);

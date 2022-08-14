@@ -11,10 +11,14 @@ public class GameRes : MonoBehaviour
     public static int diam;
 
     [Header("Level value")]
-    public Slider slider;
+    public Slider sliderlvl;
     public  static float exp;
     public  static int level;
 
+    [Header("Enerhy value")]
+    public Slider slider_ener;
+    
+    
 
 
     [Header("Text's")]
@@ -23,12 +27,14 @@ public class GameRes : MonoBehaviour
     public Text ene;
     public Text levels;
 
+    public static int CurrentGun;
+
   
 
     void Update()
     {
-        
-        slider.value = exp;
+        slider_ener.value = ener;
+        sliderlvl.value = exp;
         dia.text = diam.ToString();
         mon.text = money.ToString();
         ene.text = ener.ToString();

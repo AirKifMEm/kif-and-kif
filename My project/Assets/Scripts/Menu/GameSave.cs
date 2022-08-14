@@ -14,6 +14,8 @@ public class GameSave : MonoBehaviour
         public int diam;
         public int level;
         public float exp;
+
+        public int CurrentGun;
     }
 
     public void SaveGame()
@@ -28,6 +30,7 @@ public class GameSave : MonoBehaviour
         data.diam = GameRes.diam;
         data.exp = GameRes.exp;
         data.level = GameRes.level;
+        data.CurrentGun = GameRes.CurrentGun;
 
 
         File.WriteAllText(Application.persistentDataPath + "/Save" + "/SaveGame.sv", JsonUtility.ToJson(data));
@@ -54,6 +57,7 @@ public class GameSave : MonoBehaviour
         GameRes.diam = data.diam;
         GameRes.exp = data.exp;
         GameRes.level = data.level;
+        GameRes.CurrentGun = data.CurrentGun;
     }
 
     public void Delete()

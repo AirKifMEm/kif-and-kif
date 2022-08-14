@@ -27,8 +27,10 @@ public class player : MonoBehaviour
 
     private void Start()
     {
+
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        anim.SetInteger("GUN", GameRes.CurrentGun);
 
     }
 
