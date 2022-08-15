@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Teleport : MonoBehaviour
 {
@@ -9,6 +9,6 @@ public class Teleport : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
-            SceneManager.LoadScene(3);
+            collision.transform.position = new Vector3(pointTeleport.transform.position.x, pointTeleport.transform.position.y, pointTeleport.transform.position.z);
     }
 }

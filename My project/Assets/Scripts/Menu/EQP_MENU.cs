@@ -21,63 +21,37 @@ public class EQP_MENU : MonoBehaviour
         if (GameRes.CurrentGun == 1)
         {
             ak.SetActive(true);
-            GameRes.CurrentGun = 1;
-            rl.SetActive(false);
-            pistol.SetActive(false);
-            uzi.SetActive(false);
-            mg.SetActive(false);
-            snip.SetActive(false);
+           
+           
         }
         if (GameRes.CurrentGun == 2)
         {
             pistol.SetActive(true);
-            GameRes.CurrentGun = 2;
-            rl.SetActive(false);
-            ak.SetActive(false);
-            uzi.SetActive(false);
-            mg.SetActive(false);
-            snip.SetActive(false);
+           
+            
         }
         if (GameRes.CurrentGun == 3)
         {
             uzi.SetActive(true);
-            GameRes.CurrentGun = 3;
-            rl.SetActive(false);
-            ak.SetActive(false);
-            pistol.SetActive(false);
-            mg.SetActive(false);
-            snip.SetActive(false);
+          
+            
         }
         if (GameRes.CurrentGun == 4)
         {
             snip.SetActive(true);
-            GameRes.CurrentGun = 4;
-            rl.SetActive(false);
-            ak.SetActive(false);
-            uzi.SetActive(false);
-            mg.SetActive(false);
-            pistol.SetActive(false);
+            
+           
         }
         if (GameRes.CurrentGun == 5)
         {
             mg.SetActive(true);
-            GameRes.CurrentGun = 5;
-            rl.SetActive(false);
-            ak.SetActive(false);
-            uzi.SetActive(false);
-            pistol.SetActive(false);
-            snip.SetActive(false);
+           
         }
 
         if (GameRes.CurrentGun == 6)
         {
             rl.SetActive(true);
-            GameRes.CurrentGun = 6;
-            pistol.SetActive(false);
-            ak.SetActive(false);
-            uzi.SetActive(false);
-            mg.SetActive(false);
-            snip.SetActive(false);
+           
         }
     }
 

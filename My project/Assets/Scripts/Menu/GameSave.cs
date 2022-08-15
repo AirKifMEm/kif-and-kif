@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using System.IO;
+using System.Collections;
 
 public class GameSave : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class GameSave : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + "/Save" + "/SaveGame.sv", JsonUtility.ToJson(data));
 
         Debug.Log("Сохранено успешно");
+
+        Application.Quit();
     }
 
     public void LoadGame()

@@ -408,8 +408,10 @@ MonoBehaviour:
   coin: {fileID: 6606967758996401697, guid: 7cb919e8be4266745ad356a51db44e3b, type: 3}
   moneydrop: 0
   seeDistance: 8
-  attackDistance: 0.8
+  attackDistance: 1
   speed: 2
+  Pher: 0
+  dmg: 0
 --- !u!1 &3530165265985745173
 GameObject:
   m_ObjectHideFlags: 0

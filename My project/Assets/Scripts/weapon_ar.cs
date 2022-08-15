@@ -8,7 +8,7 @@ public class weapon_ar : MonoBehaviour
     public float firerate;
     public GameObject fireblast;
     public GameObject bullet;
-    public bool seeenemy;
+    public bool seeenemy = false;
 
     private void Start()
     {
@@ -37,4 +37,21 @@ public class weapon_ar : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            seeenemy = true;
+        }
+            
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            seeenemy = false;
+        }
+
+    }
 }

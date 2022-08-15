@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -22,12 +23,14 @@ public class player : MonoBehaviour
 
     public static int heals = 5;
     public static int coins;
+
+    public int scene;
     
 
 
     private void Start()
     {
-
+        heals = 5;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         anim.SetInteger("GUN", GameRes.CurrentGun);
@@ -76,6 +79,9 @@ public class player : MonoBehaviour
 
         if(heals <= 0)
         {
+            
+            SceneManager.LoadScene(scene);
+            
             Debug.Log("dead");
         }
     }
