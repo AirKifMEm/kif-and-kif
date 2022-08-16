@@ -17,6 +17,8 @@ public class GameSave : MonoBehaviour
         public float exp;
 
         public int CurrentGun;
+
+        public int rebith;
     }
 
     public void SaveGame()
@@ -32,7 +34,7 @@ public class GameSave : MonoBehaviour
         data.exp = GameRes.exp;
         data.level = GameRes.level;
         data.CurrentGun = GameRes.CurrentGun;
-
+        data.rebith = GameRes.rebith;
 
         File.WriteAllText(Application.persistentDataPath + "/Save" + "/SaveGame.sv", JsonUtility.ToJson(data));
 
@@ -61,6 +63,7 @@ public class GameSave : MonoBehaviour
         GameRes.exp = data.exp;
         GameRes.level = data.level;
         GameRes.CurrentGun = data.CurrentGun;
+        GameRes.rebith = data.rebith;
     }
 
     public void Delete()

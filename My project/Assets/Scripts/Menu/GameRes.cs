@@ -28,9 +28,15 @@ public class GameRes : MonoBehaviour
     public Text levels;
 
     public static int CurrentGun;
-
+    public static int rebith;
   
-
+    void Start()
+    {
+        if (rebith == 1)
+        {
+            levels.color = new Color(146, 146, 146);
+        }
+    }
     void Update()
     {
         slider_ener.value = ener;
@@ -45,6 +51,12 @@ public class GameRes : MonoBehaviour
         {
             exp = 0;
             level = level + 1;
+        }
+        //100 level Upgrade
+        if(level > 99)
+        {
+            level = 0;
+            rebith = rebith + 1;
         }
 
 
