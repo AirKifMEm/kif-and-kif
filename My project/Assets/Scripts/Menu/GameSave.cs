@@ -19,6 +19,12 @@ public class GameSave : MonoBehaviour
         public int CurrentGun;
 
         public int rebith;
+
+        public bool ak;
+        public bool snip;
+        public bool mg;
+        public bool rl;
+        public bool uzi;
     }
 
     public void SaveGame()
@@ -35,6 +41,12 @@ public class GameSave : MonoBehaviour
         data.level = GameRes.level;
         data.CurrentGun = GameRes.CurrentGun;
         data.rebith = GameRes.rebith;
+
+        data.ak = CloseGuns.ak;
+        data.uzi = CloseGuns.uzi;
+        data.snip = CloseGuns.snip;
+        data.mg = CloseGuns.mg;
+        data.rl = CloseGuns.rl;
 
         File.WriteAllText(Application.persistentDataPath + "/Save" + "/SaveGame.sv", JsonUtility.ToJson(data));
 
@@ -64,6 +76,12 @@ public class GameSave : MonoBehaviour
         GameRes.level = data.level;
         GameRes.CurrentGun = data.CurrentGun;
         GameRes.rebith = data.rebith;
+
+        CloseGuns.ak = data.ak;
+        CloseGuns.uzi = data.uzi;
+        CloseGuns.snip = data.snip;
+        CloseGuns.mg = data.mg;
+        CloseGuns.rl = data.rl;
     }
 
     public void Delete()
