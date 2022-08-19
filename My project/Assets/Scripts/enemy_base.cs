@@ -106,7 +106,7 @@ public class enemy_base : MonoBehaviour
     {
         if (pher)
         {
-        player.heals = player.heals - dmg;
+         player.heals = player.heals - dmg;
         }
     }
 }
