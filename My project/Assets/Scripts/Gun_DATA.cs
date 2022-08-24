@@ -25,7 +25,7 @@ public class Gun_DATA : MonoBehaviour
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
             GameObject prefab = Instantiate(ak, spawn, Quaternion.identity) as GameObject;
             prefab.transform.SetParent(arm.transform);
-            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y - 0.23f, prefab.transform.position.z);
+            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.8f, prefab.transform.position.y - 0.1f, prefab.transform.position.z);
         }
         if (GunN == 2) //pistol_spawn
         {
@@ -39,28 +39,30 @@ public class Gun_DATA : MonoBehaviour
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
             GameObject prefab = Instantiate(uzi, spawn, Quaternion.identity) as GameObject;
             prefab.transform.SetParent(arm.transform);
-            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y - 0.23f, prefab.transform.position.z);
+            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y - 0.1f, prefab.transform.position.z);
         }
         if (GunN == 4) //snip_spawn
         {
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
             GameObject prefab = Instantiate(snip, spawn, Quaternion.identity) as GameObject;
             prefab.transform.SetParent(arm.transform);
-            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y - 0.23f, prefab.transform.position.z);
+            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y + 0f, prefab.transform.position.z);
+            prefab.transform.Rotate(prefab.transform.rotation.x, prefab.transform.rotation.y, prefab.transform.rotation.z - 10f);
         }
         if (GunN == 5) //mg_spawn
         {
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
             GameObject prefab = Instantiate(mg, spawn, Quaternion.identity) as GameObject;
             prefab.transform.SetParent(arm.transform);
-            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.6f, prefab.transform.position.y - 0.23f, prefab.transform.position.z);
+            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.87f, prefab.transform.position.y + 0.08f, prefab.transform.position.z);
         }
         if (GunN == 6) //rocketL_spawn
         {
             Vector3 spawn = new Vector3(arm.transform.position.x, arm.transform.position.y, arm.transform.position.z);
             GameObject prefab = Instantiate(rocketL, spawn, Quaternion.identity) as GameObject;
             prefab.transform.SetParent(arm.transform);
-            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.3f, prefab.transform.position.y + 0.33f, prefab.transform.position.z);
+            prefab.transform.position = new Vector3(prefab.transform.position.x + 0.25f, prefab.transform.position.y + 0.27f, prefab.transform.position.z);
+            prefab.transform.Rotate(prefab.transform.rotation.x, prefab.transform.rotation.y, prefab.transform.rotation.z - 52f);
         }
     }
 
