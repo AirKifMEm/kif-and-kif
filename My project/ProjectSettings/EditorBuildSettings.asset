@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EQPLAYER.unity
     guid: 914edec18bb521f4198e8d1df6c1b0eb
+  - enabled: 1
+    path: Assets/Events/Event.unity
+    guid: fc8716c2e731a3446b4e7999d19b14e2
   m_configObjects: {}
