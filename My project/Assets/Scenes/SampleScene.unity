@@ -49399,12 +49399,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b79a3ffec3b7140bfd3aaecb1ecede, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ak: {fileID: 6152512858610120543, guid: d5ffb284bd1211e4db0d1768de7be105, type: 3}
-  pistol: {fileID: 2393220424346425634, guid: fa8d88cb6a2573242af359b8002edeae, type: 3}
-  uzi: {fileID: 7375848134852319009, guid: 9b2c37a557d263946b66519ca03ee903, type: 3}
-  snip: {fileID: 1784339064513149406, guid: cd88432a44f089c4a820f4bf2edca0c3, type: 3}
-  mg: {fileID: 736987547774070035, guid: 768feba4e4ddbff4aa2a6ff6900864df, type: 3}
-  rocketL: {fileID: 3819364124496405455, guid: 564e0df0714d34e42adc7ba862d57c9b, type: 3}
+  Guns:
+  - {fileID: 6152512858610120543, guid: d5ffb284bd1211e4db0d1768de7be105, type: 3}
+  - {fileID: 2393220424346425634, guid: fa8d88cb6a2573242af359b8002edeae, type: 3}
+  - {fileID: 7375848134852319009, guid: 9b2c37a557d263946b66519ca03ee903, type: 3}
+  - {fileID: 1784339064513149406, guid: cd88432a44f089c4a820f4bf2edca0c3, type: 3}
+  - {fileID: 736987547774070035, guid: 768feba4e4ddbff4aa2a6ff6900864df, type: 3}
+  - {fileID: 3819364124496405455, guid: 564e0df0714d34e42adc7ba862d57c9b, type: 3}
   arm: {fileID: 347339046}
 --- !u!4 &1354132498 stripped
 Transform:

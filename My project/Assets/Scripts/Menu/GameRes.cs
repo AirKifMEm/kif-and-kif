@@ -51,6 +51,7 @@ public class GameRes : MonoBehaviour
         {
             exp = 0;
             level = level + 1;
+            diam = diam + level;
         }
         //100 level Upgrade
         if(level > 99)
