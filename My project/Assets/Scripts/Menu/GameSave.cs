@@ -11,7 +11,7 @@ public class GameSave : MonoBehaviour
     public class Data
     {
         public int money;
-        public int ener;
+        public float ener;
         public int diam;
         public int level;
         public float exp;

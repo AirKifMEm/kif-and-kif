@@ -18,7 +18,7 @@ public class ClaimRewardsButton : MonoBehaviour
     void Update()
     {
         ButtonN = EventData.level - 1;
-        Onclick(RewardButton[ButtonN]);
+        Onclick();
     }
 
     public void Onclick()

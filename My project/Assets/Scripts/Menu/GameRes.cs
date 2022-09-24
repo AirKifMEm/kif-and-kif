@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class GameRes : MonoBehaviour
 {
     [Header("Resourse")]
     public static int money;
-    public static int ener;
+    public static float ener;
     public static int diam;
 
     [Header("Level value")]
@@ -36,6 +37,8 @@ public class GameRes : MonoBehaviour
         {
             levels.color = new Color(146, 146, 146);
         }
+        CalculateOfflineIcome();
+
     }
     void Update()
     {
@@ -61,6 +64,32 @@ public class GameRes : MonoBehaviour
         }
 
 
+    }
+
+
+    //sub proc's
+    private void OnApplicationQuit()
+    {
+        PlayerPrefs.SetString("LastPlayedTime", DateTime.UtcNow.ToString());
+    }
+    private void CalculateOfflineIcome()
+    {
+        string lastPlayedTimeString =PlayerPrefs.GetString("LastPlayedTime", null);
+
+        if (lastPlayedTimeString == null)
+            return;
+
+        var lastPlayedTime = DateTime.Parse(lastPlayedTimeString);
+        int timeSpanRestriction = 24 * 60 * 60;
+        double secondSpan = (DateTime.UtcNow - lastPlayedTime).TotalSeconds;
+
+        if (secondSpan > timeSpanRestriction)
+            secondSpan = timeSpanRestriction;
+        ener = ener + (float)secondSpan / 60 / 5;
+        if (ener > 100)
+        {
+            ener = 100;
+        }
     }
 
 }

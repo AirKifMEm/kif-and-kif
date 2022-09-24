@@ -4087,6 +4087,7 @@ GameObject:
   - component: {fileID: 833675661}
   - component: {fileID: 833675660}
   - component: {fileID: 833675659}
+  - component: {fileID: 833675663}
   m_Layer: 5
   m_Name: PlayButtonL2
   m_TagString: Untagged
@@ -4138,7 +4139,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 833675663}
         m_TargetAssemblyTypeName: PlayButton, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 3
@@ -4210,6 +4211,19 @@ RectTransform:
   m_AnchoredPosition: {x: 401, y: -192.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &833675663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833675658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7537d4d05d9db51439f924c19321bb26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LostEnergy: 5
 --- !u!1 &848428512
 GameObject:
   m_ObjectHideFlags: 0
